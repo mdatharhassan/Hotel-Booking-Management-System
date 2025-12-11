@@ -10,7 +10,7 @@ import settingRouter from "./routes/settings.js";
 const app = express();
 
 // Load environment variables from .env file
-dotenv.config();
+// dotenv.config();
 
 // Cors configuration
 const corsOptions = {
@@ -36,7 +36,7 @@ app.use("/api/cabins", cabinRouter);
 app.use("/api/settings", settingRouter);
 
 connectDB(process.env.MONGO_URL);
-app.listen(5000);
+// app.listen(5000);
 
 const handler = app;
 export default handler;
