@@ -14,10 +14,7 @@ dotenv.config();
 
 // Cors configuration
 const corsOptions = {
-  origin: [
-    "http://localhost:5173",
-    "https://hotel-booking-management-system-fro.vercel.app",
-  ],
+  origin: ["http://localhost:5173", process.env.FRONTEND_WEB],
   credentials: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
 };
