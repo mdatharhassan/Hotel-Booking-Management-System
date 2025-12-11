@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://test-express-eta-eight.vercel.app",
+  baseURL: import.meta.env.VITE_BACKEND_SERVER_PATH,
   withCredentials: true,
 });
 
