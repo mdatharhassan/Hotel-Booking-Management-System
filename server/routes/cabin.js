@@ -2,6 +2,7 @@ import express from "express";
 import Cabin from "../model/cabinModel.js";
 import userAuth from "../middleware/auth.js";
 import { imageUpload } from "../config/cloudinary.js";
+import upload from "../middleware/upload.js";
 // import multer from "multer";
 // const upload = multer({ dest: "uploads/" });
 
